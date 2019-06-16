@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info</title>
+
+    <style>
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+
+        #bobr {
+            color: white;
+            text-decoration: none;
+            background-color: orange;
+
+            padding: 1em 1.5em;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        #bobr:hover{
+            color: white;
+            text-decoration: none;
+            background-color: grey;
+
+            padding: 1em 1.5em;
+            text-decoration: none;
+
+        }
+
+    </style>
+
+
+</head>
+<body style="font-family:Verdana;">
+<div style= "text-align:center; background-color:darkseagreen ;padding:15px">
+  <h1>Info</h1>
+</div>
+<div class="topnav">
+  <a href="http://generatequotes.pythonanywhere.com/generatequotes">Generate Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/find">All Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/best">Best Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/database">The Database</a>
+</div>
+
+
+<h2 style="color: forestgreen">The Quote:</h2>
+<h2>{{ quote.Quote_text }}</h2>
+<br>
+<br>
+<h2 style="color: forestgreen">info:</h2>
+<h2>This is {{quote.pk}} generated quote. </h2>
+<h2>This quote was generated at this time: (  {{ quote.pub_date }} ).</h2>
+<h2>This quote was most likely created from these quotes:</h2>
+{% if not posquotelist %}
+    <h3 style="color: red">Sorry this function wasn't made when this quote generated</h3>
+{% endif %}
+
+
+{% for quote in posquotelist %}
+    <ul>
+        <li style= "text-align: left; font-size: large; color: darkblue">{{quote}}</li>
+    </ul>
+
+{% endfor %}
+
+
+
+
+
+
+{% if quote.pk < 40%}
+    <h2>This is the first generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 100 and quote.pk > 40%}
+    <h2>This is the second generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 150 and quote.pk > 100%}
+    <h2>This is the third generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 200  and quote.pk > 150%}
+    <h2>This is the forth generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 220  and quote.pk > 200%}
+    <h2>This is the fifth generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 250  and quote.pk > 220%}
+    <h2>This is the sixth generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 280  and quote.pk > 250%}
+    <h2>This is the seventh generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 300  and quote.pk > 280%}
+    <h2>This is the eighth generation of quotes from the algorithm.</h2>
+
+{% endif %}
+
+{% if quote.pk < 320  and quote.pk > 300%}
+    <h2>This is the ninth generation of quotes from the algorithm.</h2>
+{% endif %}
+
+{% if quote.pk < 340  and quote.pk > 320%}
+    <h2>This is the tenth generation of quotes from the algorithm.</h2>
+{% endif %}
+
+{% if quote.pk < 360  and quote.pk > 340%}
+    <h2>This is the eleventh generation of quotes from the algorithm.</h2>
+{% endif %}
+
+{% if quote.pk < 400  and quote.pk > 360%}
+    <h2>This is the eleventh generation of quotes from the algorithm.</h2>
+{% endif %}
+
+{% if quote.pk < 450  and quote.pk > 400%}
+    <h2>This is the eleventh generation of quotes from the algorithm.</h2>
+{% endif %}
+
+{% if quote.pk < 500  and quote.pk > 450%}
+    <h2>This is the twelfth generation of quotes from the algorithm.</h2>
+{% endif %}
+
+{% if quote.pk < 501  and quote.pk > 500%}
+    <h2>This is the thirteenth generation of quotes from the algorithm.</h2>
+{% endif %}
+
+<br>
+<a id = bobr href="http://generatequotes.pythonanywhere.com/{{quote.pk}}/add">Add to Best Quotes</a>
+
+</div>
+</body>
+</html>

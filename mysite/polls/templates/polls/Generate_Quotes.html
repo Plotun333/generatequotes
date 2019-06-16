@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Generator</title>
+    <style>
+        .button{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 43%;
+        }
+
+
+
+        .top{
+            text-align: center;
+            font-size: large;
+
+
+
+        }
+
+        .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    </style>
+</head>
+<body style="font-family:Verdana;">
+<div style= "text-align:center; background-color:darkseagreen ;padding:15px">
+  <h1>Quote Generator</h1>
+</div>
+<div class="topnav">
+  <a href="http://generatequotes.pythonanywhere.com/">Home</a>
+  <a href="http://generatequotes.pythonanywhere.com/best">Best Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/find">All Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/database">The Database</a>
+
+</div>
+<h1 style="text-align: center">generated quote:</h1>
+
+<input class="button" type="button" value="Generate Quote" onClick="window.location.reload()">
+
+<p id="demo"></p>
+
+
+
+
+
+{% if latest_question_list %}
+        {% for question in latest_question_list %}
+            <h2 class = top>{{ question.Quote_text }}</h2>
+
+        {% endfor %}
+        {% else %}
+            <p>Error</p>
+        {% endif %}
+
+</body>
+</html>

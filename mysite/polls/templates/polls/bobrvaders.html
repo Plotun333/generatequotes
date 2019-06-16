@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Bobr Vaiders</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    {% if heslo != "aFLRX404XRLF" %}
+    <script src="/libraries/p5.min.js" type="text/javascript"></script>
+    <script src="/addons/p5.dom.min.js" type="text/javascript"></script>
+    <script src="/staticjs/main.js" type="text/javascript"></script>
+    <script src="/staticjs/Ship.js" type="text/javascript"></script>
+    <script src="/staticjs/Bobr.js" type="text/javascript"></script>
+    <script src="/staticjs/Shot.js" type="text/javascript"></script>
+    <script src="/staticjs/Shot2.js" type="text/javascript"></script>
+    <script src="/staticjs/Lives.js" type="text/javascript"></script>
+    <script src="/staticjs/blocks.js" type="text/javascript"></script>
+    <script src="/staticjs/Molcik.js" type="text/javascript"></script>
+    <script src="/staticjs/blood.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <div>
+        <h3>Anti-bobří společenství má stále problémy s kompletním vyhlazením bobrů na základní škole Bílá. Myslíme si, že s bobry tamní ředitel dokonce spolupracuje! Pomož nám s jejich poražením tím, že vyhraješ všech 10 levelů. Pokud se ti to podaří, odměna tě nemine!</h3>
+    </div>
+    {% else %}
+    <div style="text-align: center width:100%">
+        <h1>Dobrá práce!</h1>
+        <h3>Porazil si Molčíka i s jeho armádou bobrů a osvobodil si tak ZŠ Bílou od jeho bobří tyranie. Za odměnu ti naše anti-bobří společenství dá to nejcennější, co máme. HESLO NA ŠKOLNÍ WI-FI!</h3>
+        <h2>Heslo na školní wifi je: {{heslo}}</h2>
+        <h4>Pokud nechceš, aby na to hned přišli a změnili ho, nikomu o něm neříkej!</h4>
+    </div>
+
+    {% endif %}
+
+</head>
+<body>
+</body>
+</html>

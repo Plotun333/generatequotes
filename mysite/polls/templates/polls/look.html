@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Quote</title>
+    <style>
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        #bobr {
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+
+        padding: 5px 15px;
+        text-decoration: none;
+
+
+        }
+
+
+    #bobr:hover{
+        color: white;
+        text-decoration: none;
+        background-color: forestgreen;
+
+        padding: 5px 15px;
+        text-decoration: none;
+
+
+        }
+
+    </style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style= "text-align:center; background-color:darkseagreen ;padding:15px">
+  <h1>Look for Quotes</h1>
+</div>
+<div class="topnav">
+  <a href="http://generatequotes.pythonanywhere.com/">Home</a>
+  <a href="http://generatequotes.pythonanywhere.com/generatequotes">Generate Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/find">All Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/best">Best Quotes</a>
+  <a href="http://generatequotes.pythonanywhere.com/database">The Database</a>
+</div>
+
+
+<h2>Found Quotes</h2>
+<br>
+        {% if quote %}
+        <ul>
+        {% for question in quote %}
+            <li>{{ question.Quote_text }}</li>
+            <br>
+            <a id="bobr"href="http://generatequotes.pythonanywhere.com/{{question.pk}}">...</a>
+            <h1></h1>
+        {% endfor %}
+            </ul>
+        {% else %}
+            <p>No quotes are available.</p>
+        {% endif %}
+
+
+</body>
+</html>
