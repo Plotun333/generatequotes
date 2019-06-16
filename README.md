@@ -29,7 +29,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Please don't take the website to seriusly this website was made for fun and to learn something new!!
+Please don't take the website to seriously this website was made for fun and to learn something new!!
 
 ## What did I learn? 
 * ### how to work with pythonanywhere 
