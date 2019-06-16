@@ -1,40 +1,21 @@
-# BookHunter-mobile
-this app looks at a given list of webpages for keywords and returns all the text on these webpages that 
-contain these key words that were found
+# Quote generator
+this website creates quotes thanks to the markov chain algorithm
 
 ## For what can use this?
-you can use this app to looking for new products on a webpage all you need to do is:
-* suply the app with a list of webpages
-* suply the app with a list of keywords (The app will look if the webpages contain these keywords)
+for genting some insiration while creating quote
 
 ## Getting Started
 there are two requirements for this app Android Studio and device with min. SDK version 14 (or emulator)
 
 
-## How does it look?
-these are some screenshots from the app:
+## Check the website out!
+http://generatequotes.pythonanywhere.com/
 
-* ### main page
-#
-![main bookhunter page](https://i.imgur.com/4JqtbTq.png)
-
-#
-* ### add keyword page
-# 
-
-![keyword bookhunter page](https://i.imgur.com/TKS9zv7.png)
-
-#
-* ### add website page
-#
-
-![websites bookhunter page](https://i.imgur.com/QgrSMjI.png)
 
 
 ## Built With
 
-* [Firebase](https://firebase.google.com/) - The backend for user Auth and database
-* [Jsoup](https://jsoup.org//) - The library that the app uses to get the content of a webpage
+* [Pythonanywhere](https://www.pythonanywhere.com/) - The hosting
 
 
 
@@ -48,14 +29,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Please make sure that you have a steady internet connection!
+Please don't take the website to seriusly this website was made for fun and to learn something new!!
 
 ## What did I learn? 
-* ### how to work with jsoup
-* ### how to create a UI with a recycleviewer
-* ### handling Auth google account and firebase
-* ### how to use realtimedatabase in firebase
-* ### how to work with a alarm and notifications
-* ### how to work with spinner
-* ### how to check if a webpage exist or not
+* ### how to work with pythonanywhere 
+* ### how to work with django (backend)
+* ### creating an Exceptable UI thanks to: javascript, html, css
+* ### working with a database
 
