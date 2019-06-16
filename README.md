@@ -16,6 +16,7 @@ http://generatequotes.pythonanywhere.com/
 ## Built With
 
 * [Pythonanywhere](https://www.pythonanywhere.com/) - The hosting
+* [Django](https://www.djangoproject.com/) - backend
 
 
 
